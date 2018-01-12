@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS-generator</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/flexGrid.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/range.js"></script>
+</head>
+<body>
+  <h1 id="titleApp">CSS-generator</h1>
+  <div class="container">
+    <div class="left">
+      <h2>Settings</h2>
+      <input id="rangR" type="range" name="" value="0" max="255" class="range" oninput="range('rangR')">
+      <input id="rangG" type="range" name="" value="0" max="255" class="range" oninput="range('rangG')">
+      <input id="rangB" type="range" name="" value="0" max="255" class="range" oninput="range('rangB')">
+    </div>
+    <div class="center">
+      <h2>Result</h2>
+      <div id="colorBlock"></div>
+    </div>
+    <div class="right">
+      <h2>CSS-code</h2>
+    </div>
+  </div>
+</body>
+</html>
