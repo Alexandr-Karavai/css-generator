@@ -11,5 +11,7 @@ function setColor() {
   var valB     = document.getElementById('rangB').value;
   var valBlock = document.getElementById('colorBlock').style
   .backgroundColor = 'rgb('+valR+','+valG+','+valB+')';
+
   var computedStyle = getComputedStyle(document.getElementById('colorBlock'));
+  document.getElementById('colorResult').value = computedStyle.backgroundColor;
  }

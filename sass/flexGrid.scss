@@ -1,4 +1,5 @@
 $primary-width: 30%;
+$adaptive-width: 80%;
 $border: 2px solid #009688;
 
 #titleApp {
@@ -32,12 +33,37 @@ $border: 2px solid #009688;
     border: $border;
     margin-left: 10px;
     margin-right: 10px;
+    padding: 10px;
   }
 
   .right {
     @extend .container;
+    flex-direction: column;
+    align-items: center;
     width: $primary-width;
     border-radius: 10px;
     border: $border;
+    padding: 10px;
   }
+}
+
+@media (max-width: 710px){
+  .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: none;
+
+    .left {
+      width: $adaptive-width;
+    }
+
+    .center {
+      width: $adaptive-width;
+    }
+
+    .right {
+      width: $adaptive-width;
+    }
+  }
+
 }
