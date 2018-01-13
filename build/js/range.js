@@ -1,7 +1,7 @@
 function range(rang) {
 	var val = document.getElementById(rang).value;
 	document.getElementById(rang).style
-  .background = '-webkit-linear-gradient(left ,#009688 0%,#009688 '+val+'%,#fff '+val+'%, #fff 100%)';
+  .background = '-webkit-linear-gradient(left ,#009688 0%,#009688 '+((val*100)/255)+'%,#fff '+((val*100)/255)+'%, #fff 100%)';
   setColor();
  }
 
