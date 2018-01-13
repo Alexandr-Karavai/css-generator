@@ -15,9 +15,9 @@
   <div class="container">
     <div class="left">
       <h2>Settings</h2>
-      <input id="rangR" type="range" name="" value="0" max="255" class="range" oninput="range('rangR')">
-      <input id="rangG" type="range" name="" value="0" max="255" class="range" oninput="range('rangG')">
-      <input id="rangB" type="range" name="" value="0" max="255" class="range" oninput="range('rangB')">
+      <input id="rangR" type="range" name="" value="0" max="255" class="range" oninput="range('rangR', 255)">
+      <input id="rangG" type="range" name="" value="0" max="255" class="range" oninput="range('rangG', 255)">
+      <input id="rangB" type="range" name="" value="0" max="255" class="range" oninput="range('rangB', 255)">
     </div>
     <div class="center">
       <h2>Result</h2>
@@ -25,7 +25,27 @@
     </div>
     <div class="right">
       <h2>CSS-code</h2>
-      <input id="colorResult" type="text" name="" value="">
+      <input class="inputCSS" id="colorResult" type="text" name="" value="">
+    </div>
+  </div>
+  <div class="container">
+    <div class="left">
+      <h2>Settings</h2>
+      <input id="borderRTL" type="range" value="0" max="100" class="range" oninput="range('borderRTL', 100)">
+      <input id="borderRTR" type="range" value="0" max="100" class="range" oninput="range('borderRTR', 100)">
+      <input id="borderRBR" type="range" value="0" max="100" class="range" oninput="range('borderRBR', 100)">
+      <input id="borderRBL" type="range" value="0" max="100" class="range" oninput="range('borderRBL', 100)">
+    </div>
+    <div class="center">
+      <h2>Result</h2>
+      <div id="borderBlock"></div>
+    </div>
+    <div class="right">
+      <h2>CSS-code</h2>
+      <input class="inputCSS" id="resultRTL" type="text" name="" value="">
+      <input class="inputCSS" id="resultRTR" type="text" name="" value="">
+      <input class="inputCSS" id="resultRBR" type="text" name="" value="">
+      <input class="inputCSS" id="resultRBL" type="text" name="" value="">
     </div>
   </div>
 </body>
