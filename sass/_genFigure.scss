@@ -5,3 +5,13 @@
   background-color: #b5194d;
   border: 2px solid #009688;
 }
+
+#shadowGen {
+  @extend #borderBlock ;
+  background-color: #e8dfe2;
+}
+
+.areaCSS {
+  border: 2px solid #009688;
+  border-radius: 10px;
+}
