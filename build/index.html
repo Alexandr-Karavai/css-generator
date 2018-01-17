@@ -6,7 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>CSS-generator</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/flexGrid.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/range.js"></script>
 </head>
@@ -42,10 +41,29 @@
     </div>
     <div class="right">
       <h2>CSS-code</h2>
-      <input class="inputCSS" id="resultRTL" type="text" name="" value="">
-      <input class="inputCSS" id="resultRTR" type="text" name="" value="">
-      <input class="inputCSS" id="resultRBR" type="text" name="" value="">
-      <input class="inputCSS" id="resultRBL" type="text" name="" value="">
+      <textarea class="areaCSS" id="resultRTL" name="name" rows="4" cols="30"></textarea>
+    </div>
+  </div>
+  <div class="container">
+    <div class="left" onchange="setBoxShadow()">
+      <h2>Settings</h2>
+      <select id="typeShadow" class="inputCSS" name="">
+        <option value="inset">inset</option>
+        <option value="outset">no</option>
+      </select>
+        <input id="typeHorizon"   class="inputCSS" type="number" placeholder="Horizontal Lenght">
+        <input id="typeVertical"  class="inputCSS" type="number" placeholder="Vertical Lenght">
+        <input id="typeBlur"      class="inputCSS" type="number" placeholder="Blur Radius">
+        <input id="typeSpread"    class="inputCSS" type="number" placeholder="Spread">
+        <input id="typeColor"     class="inputCSS" type="color"  placeholder="Color">
+    </div>
+    <div class="center">
+      <h2>Result</h2>
+      <div id="shadowGen"></div>
+    </div>
+    <div class="right">
+      <h2>CSS-code</h2>
+      <textarea class="areaCSS" id="resultShadow" name="name" rows="4" cols="30"></textarea>
     </div>
   </div>
 </body>
